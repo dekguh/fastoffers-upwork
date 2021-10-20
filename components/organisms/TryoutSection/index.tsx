@@ -11,8 +11,13 @@ const TryoutSection : React.FC = () => {
                 </svg>
             </div>
 
-            <div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div className='container mx-auto px-5 lg:px-10 xl:px-20 pt-64 pb-20'>
+                <div className='text-center'>
+                    <h2 className='text-white text-5xl font-bold mb-5'>try out the live instant demo:</h2>
+                    <p className='mb-3 text-gray-800 text-lg'>Try the demo below to see how fast and easy it is to draft full real estate agreements with FastOffers</p>
+                </div>
+
+                <div className='bg-white' data-tf-widget="t3WZeT" data-tf-opacity="0" data-tf-hide-headers data-tf-hide-footer data-tf-hidden="user_id=,demo=true" style={{ width: '100%', height:'400px' }}></div>
             </div>
 
             <svg className='absolute -bottom-0 left-0 right-0 w-full' fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="201" viewBox="0 0 1920.002 855.001" preserveAspectRatio="none">
