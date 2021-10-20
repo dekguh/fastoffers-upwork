@@ -1,3 +1,6 @@
-export function calPercentOf(currentNum : number, totalNum : number) {
-    return Math.floor(((currentNum/(totalNum - (24/100 * totalNum))) * 100/100) * 100)
+export function calPercentOf(currentNum : number, totalNum : number, windowHeight : number) {
+    const currentReal = currentNum + windowHeight
+    const cal = Math.ceil((currentReal/totalNum) * 100)
+    console.log({ currentReal, totalNum, windowHeight, cal })
+    return cal
 }

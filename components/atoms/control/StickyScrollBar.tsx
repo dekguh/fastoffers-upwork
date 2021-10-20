@@ -1,14 +1,18 @@
 import useWindowScroll from '@react-hook/window-scroll'
+import { useWindowHeight } from '@react-hook/window-size'
 import React, { useState, useEffect } from 'react'
 import { calPercentOf } from '../../utils/other'
 
 const StickyScrollBar : React.FC = () => {
     const scrollY = useWindowScroll(60)
+    const windowH = useWindowHeight()
     const [pageHeight, setPageHeight] = useState<number>(0)
 
     useEffect(() => {
         setPageHeight(document.documentElement.offsetHeight)
     }, [])
+
+    console.log(calPercentOf(scrollY, pageHeight, windowH))
 
     return (
         <div className='fixed top-2/4 right-9 z-50 transform -translate-x-2/4'>
@@ -19,7 +23,7 @@ const StickyScrollBar : React.FC = () => {
                 <div
                     className='rounded-full bg-gray-800 h-2 w-2 absolute left-2/4 transform -translate-x-2/4 -translate-y-2/4'
                     style={{
-                        top: `${calPercentOf(scrollY, pageHeight)}%`
+                        top: `${calPercentOf(scrollY, pageHeight, 0)}%`
                     }}
                 >
                 </div>
