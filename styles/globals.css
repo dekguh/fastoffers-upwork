@@ -1,16 +1,111 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@layer base {
+    body {
+        @apply font-primary;
+    }
+
+    .text-gradient-green {
+        background: -webkit-linear-gradient(156deg, rgb(41, 255, 198) 0.6369426751592356%, rgb(64,216,161) 66.24203821656052%);
+        background: linear-gradient(156deg, rgb(41, 255, 198) 0.6369426751592356%, rgb(64,216,161) 66.24203821656052%);
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        text-fill-color: transparent !important;
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+    .button-primary {
+        @apply bg-primary text-white;
+        @apply px-7 py-3;
+        @apply rounded;
+        @apply text-white hover:shadow-primary;
+        @apply text-center;
+        @apply duration-300;
+    }
 
-* {
-  box-sizing: border-box;
+    .button-secondary {
+        @apply bg-secondary text-white;
+        @apply px-7 py-3;
+        @apply rounded;
+        @apply text-white hover:shadow-primary;
+        @apply text-center;
+        @apply duration-300;
+    }
+
+    .button-secondary:hover {
+        @apply bg-primary;
+    }
+
+    .button-primary .button-text,
+    .button-secondary .button-text {
+        @apply duration-300 relative z-20;
+    }
+
+    .button-primary .button-icon,
+    .button-secondary .button-icon {
+        @apply duration-300;
+        @apply invisible opacity-0;
+        margin-inline-start: -16px;
+    }
+
+    .button-primary:hover .button-text,
+    .button-secondary:hover .button-text {
+        @apply transform -translate-x-1;
+    }
+
+    .button-primary:hover .button-icon,
+    .button-secondary:hover .button-icon {
+        @apply transform translate-x-4 visible opacity-100;
+    }
+
+    .text-bordered {
+        @apply inline-block relative;
+    }
+
+    .text-bordered .text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .text-bordered .bordered {
+        position: absolute;
+        background-color: rgba(64, 216, 161, 0.48);
+        height: 30px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .text-bordered .bordered-white-anim {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.81);
+        height: 15px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: .5s;
+    }
+
+    .text-bordered:hover .bordered-white-anim {
+        height: 60px;
+    }
+
+    .bg-bordered-wrap {
+        background-image: url('/bg-border.png');
+        background-size: 70% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .mouse-effect {
+        @apply bg-primary;
+    }
 }

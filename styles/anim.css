@@ -1,0 +1,133 @@
+.hamburger {
+    height: 20px;
+    width: 26px;
+    position: relative;
+}
+
+.hamburger .bars-1 {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    transition: .4s;
+}
+
+.hamburger .bars-2 {
+    position: absolute;
+    top: 8px;
+    display: block;
+    width: 21px;
+    height: 2px;
+    background-color: #000;
+    transition: .4s;
+}
+
+.hamburger .bars-3 {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    transition: .4s;
+}
+
+.hamburger.active .bars-1 {
+    opacity: 0;
+}
+
+.hamburger.active .bars-2 {
+    opacity: 0;
+}
+
+.hamburger.active .bars-3 {
+    opacity: 0;
+}
+
+.hamburger .bars-close-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    transition: .4s;
+    opacity: 0;
+}
+
+.hamburger .bars-close-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    opacity: 0;
+    transition: .4s;
+}
+
+.hamburger.active .bars-close-1 {
+    opacity: 1;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger.active .bars-close-2 {
+    opacity: 1;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* anim */
+.nav-list-content {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    padding: 20px 20px;
+    opacity: 0;
+    transition: opacity .3s, max-height .2s .6s;
+}
+
+.nav-list-content.active {
+    transition: opacity .6s, max-height .3s .1s;
+    opacity: 1;
+    max-height: 220px;
+    padding: 20px 20px;
+}
+
+.anim-bounce-image {
+    animation: -bounce-image 3s linear infinite;
+}
+
+
+@keyframes -bounce-image {
+    0% {
+        bottom: -30px;
+    }
+
+    50% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: -30px;
+    }
+}
+
+.mouse-effect-carousel {
+    height: 5px;
+    width: 5px;
+    background-color: #27292c;
+    border-radius: 100%;
+    opacity: 0;
+    transition: height .7s, width .7s, opacity .7s;
+}
+
+.mouse-effect-carousel.active {
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    transition: height .7s, width .7s, opacity .7s;
+}
