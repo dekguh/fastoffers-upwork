@@ -131,3 +131,28 @@
     opacity: 1;
     transition: height .7s, width .7s, opacity .7s;
 }
+
+.btn {
+    all: unset;
+    cursor: pointer;
+  }
+.button--flip {
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 500ms ease-in-out;
+  }
+.button--flip .button__face {
+    transform: translateZ(1.5em);
+  }
+.button--flip .button__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%) rotateX(90deg);
+  }
+.button--flip:hover {
+    transform-origin: center;
+    transform: rotateX(-90deg);
+  }
