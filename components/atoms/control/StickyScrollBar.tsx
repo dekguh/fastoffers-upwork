@@ -12,8 +12,6 @@ const StickyScrollBar : React.FC = () => {
         setPageHeight(document.documentElement.offsetHeight)
     }, [])
 
-    console.log(calPercentOf(scrollY, pageHeight, windowH))
-
     return (
         <div className='fixed top-2/4 right-9 z-50 transform -translate-x-2/4'>
             <div>
