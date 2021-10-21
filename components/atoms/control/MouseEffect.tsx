@@ -15,6 +15,7 @@ const MouseEffect : React.FC<IMouseEffect> = ({ children }) => {
         <div ref={target} className='mouse-effect-wrapper'>
             {children}
             <div
+                id='mouseEffectId'
                 className='mouse-effect pointer-events-none rounded-full h-3 w-3 fixed z-40 transform -translate-x-2/4 -translate-y-2/4'
                 style={{
                     left: `${mouse.clientX}px`,

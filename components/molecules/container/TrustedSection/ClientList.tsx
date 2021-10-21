@@ -37,9 +37,11 @@ const ClientList : React.FC<IClientList> = ({ dataLogo }) => {
       <div
         ref={ref}
         onMouseEnter={() => {
+          document.getElementById('mouseEffectId')?.classList.add('hidden')
           isEnter == false && setIsEnter(true)
         }}
         onMouseLeave={() => {
+          document.getElementById('mouseEffectId')?.classList.remove('hidden')
           isEnter == true && setIsEnter(false)
         }}
         className='overflow-hidden'
@@ -49,6 +51,7 @@ const ClientList : React.FC<IClientList> = ({ dataLogo }) => {
               responsive={responsive}
               infinite={true}
               draggable={true}
+              swipeable={true}
               autoPlay={true}
               autoPlaySpeed={1}
               ssr={true}

@@ -7,7 +7,7 @@ const FooterBottom : React.FC<IFooterBottom> = ({ logo, copyright }) => {
             <img src={logo} alt="logo" className='mx-auto' />
 
             {copyright && (
-            <div className='text-white text-center mt-4'>
+            <div className='text-white text-center mt-4 text-sm'>
                 {copyright}
             </div>)}
         </div>

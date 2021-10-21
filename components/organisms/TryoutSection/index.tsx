@@ -2,7 +2,15 @@ import React from 'react'
 
 const TryoutSection : React.FC = () => {
     return (
-        <div className='relative bg-primary mt-10'>
+        <div
+            className='relative bg-primary mt-10'
+            onMouseEnter={() => {
+                document.getElementById('mouseEffectId')?.classList.add('hidden')
+            }}
+            onMouseLeave={() => {
+                document.getElementById('mouseEffectId')?.classList.remove('hidden')
+            }}
+        >
             <div className='absolute top-0 left-0 right-0'>
                 <svg className='transform rotate-180 h-52 w-full' width="1440" height="325" viewBox="0 0 1440 325" fillOpacity="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                     <path d="M810.109 190.723V324.906H1439.97V141.635C1399.11 107.824 1358.5 72.4044 1316.96 48.4386C1146.99 -48.5261 971.704 0.680438 810.109 190.723Z" fill="#0A6373"></path>
@@ -17,7 +25,7 @@ const TryoutSection : React.FC = () => {
                     <p className='mb-3 text-gray-800 text-lg'>Try the demo below to see how fast and easy it is to draft full real estate agreements with FastOffers</p>
                 </div>
 
-                <div className='bg-white' data-tf-widget="t3WZeT" data-tf-opacity="0" data-tf-hide-headers data-tf-hide-footer data-tf-hidden="user_id=,demo=true" style={{ width: '100%', height:'400px' }}></div>
+                <div className='bg-white' data-tf-widget="t3WZeT" data-tf-opacity="0" data-tf-hide-headers data-tf-hide-footer data-tf-hidden="user_id=,demo=true" style={{ width: '100%', height:'700px' }}></div>
             </div>
 
             <svg className='absolute -bottom-0 left-0 right-0 w-full' fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="201" viewBox="0 0 1920.002 855.001" preserveAspectRatio="none">

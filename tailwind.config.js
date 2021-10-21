@@ -23,12 +23,16 @@ module.exports = {
         'border': "url('/bg-border.png')"
       },
       fontSize: {
-        '5.8vw': '5.8vw'
+        '5.8vw': '5.8vw',
+        '5.8vw': '5.8vw',
       },
       borderColor: {
         'primary': '#40D8A1',
         'secondary': 'rgb(230, 108, 108)',
         'optional': '#27292c'
+      },
+      height: {
+        '500px': '500px'
       }
     },
   },

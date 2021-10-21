@@ -7,6 +7,7 @@ import PricingSection from '../../organisms/PricingSection'
 import StepSection from '../../organisms/StepSection'
 import TrustedSection from '../../organisms/TrustedSection'
 import TryoutSection from '../../organisms/TryoutSection'
+import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
     useEffect(() => {
@@ -22,23 +23,29 @@ const HomePage = () => {
         document.body.appendChild(script2);
     }, [])
     return (
-    <MouseEffect>
-        <div className='bg-bordered-wrap'>
-            <HomeHero />
+    <>
+        <Helmet>
+            <script src='/chat.js'></script>
+        </Helmet>
 
-            <StepSection />
+        <MouseEffect>
+            <div className='bg-bordered-wrap'>
+                <HomeHero />
 
-            <TryoutSection />
+                <StepSection />
 
-            <TrustedSection />
+                <TryoutSection />
 
-            <PricingSection />
+                <TrustedSection />
 
-            <Footer />
-        </div>
+                <PricingSection />
 
-        <StickyScrollBar />
-    </MouseEffect>
+                <Footer />
+            </div>
+
+            <StickyScrollBar />
+        </MouseEffect>
+    </>
     )
 }
 

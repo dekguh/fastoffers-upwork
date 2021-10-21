@@ -5,7 +5,7 @@ import { BsArrowRightShort } from 'react-icons/bs'
 const HomeHeroLeft = () => {
     return (
         <div className='flex-grow-0 flex-shrink w-full lg:w-5/12 xl:w-5/12 2xl:w-4/12'>
-            <h1 className='text-gradient-green text-5xl md:text-9xl lg:text-5.8vw font-bold leading-tight mt-5 lg:mt-0'>
+            <h1 className='text-gradient-green text-5xl md:text-9xl lg:text-6xl 2xl:text-8xl font-bold leading-tight mt-5 lg:mt-0'>
                 we help agents draft offers faster
             </h1>
 

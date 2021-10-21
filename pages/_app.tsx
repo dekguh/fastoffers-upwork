@@ -1,3 +1,4 @@
+import '../styles/font.css'
 import '../styles/globals.css'
 import '../styles/anim.css'
 import 'react-multi-carousel/lib/styles.css'
