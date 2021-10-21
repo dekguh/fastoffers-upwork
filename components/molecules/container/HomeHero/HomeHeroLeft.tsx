@@ -1,11 +1,12 @@
 import React from 'react'
 import ButtonSecondary from '../../../atoms/control/ButtonSecondary'
 import { BsArrowRightShort } from 'react-icons/bs'
+import Link from 'next/link'
 
 const HomeHeroLeft = () => {
     return (
         <div className='flex-grow-0 flex-shrink w-full lg:w-5/12 xl:w-5/12 2xl:w-4/12'>
-            <h1 className='text-gradient-green text-5xl md:text-9xl lg:text-6xl 2xl:text-8xl font-bold leading-tight mt-5 lg:mt-0'>
+            <h1 className='text-gradient-green text-5xl md:text-9xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold leading-tight mt-5 lg:mt-0'>
                 we help agents draft offers faster
             </h1>
 
@@ -14,11 +15,15 @@ const HomeHeroLeft = () => {
             </p>
 
             <div className='text-center inline-block'>
-                <ButtonSecondary
-                    text="Try it out - It's Free"
-                    icon={BsArrowRightShort}
-                    classes='py-4 px-14 rounded-full text-lg'
-                />
+                <Link href='https://forms.ltd/register'>
+                    <a>
+                        <ButtonSecondary
+                            text="Try it out - It's Free"
+                            icon={BsArrowRightShort}
+                            classes='py-4 px-14 rounded-full text-lg'
+                        />
+                    </a>
+                </Link>
 
                 <p className='text-xs mt-3'>
                     totally <span className='font-bold'>free for 30 days</span>. No credit card required.

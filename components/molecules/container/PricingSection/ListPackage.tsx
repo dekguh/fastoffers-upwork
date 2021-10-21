@@ -46,7 +46,7 @@ const ListPackage : React.FC = () => {
                         }
                     ]}
                     buttonText='START 30 DAY FREE TRIAL'
-                    buttonUrl='#'
+                    buttonUrl='https://forms.ltd/register'
                     isGreen={true}
                 />
             </div>

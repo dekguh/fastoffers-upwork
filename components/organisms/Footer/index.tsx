@@ -19,7 +19,7 @@ const Footer = () => {
                 <FooterBottom
                     logo='/logo-white.png'
                     copyright={(
-                        <p>Have a question or need help? Send us an <a href="#">email</a>. © 2021 FastOffers.ca & <a href="#">Forms</a> LTD. | Privacy Policy  Made with ❤ in Toronto</p>
+                        <p>Have a question or need help? Send us an <a href="mailto:support@forms.ltd">email</a>. © 2021 FastOffers.ca & <a href="https://www.forms.ltd/">Forms</a> LTD. | Privacy Policy  Made with ❤ in Toronto</p>
                     )}
                 />
             </div>
