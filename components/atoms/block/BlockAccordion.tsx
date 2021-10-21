@@ -6,7 +6,7 @@ import { IBlockAccordion } from '../../utils/types'
 const BlockAccordion : React.FC<IBlockAccordion> = ({ icon : Icon, title, description, isOpen, onClick }) => {
     return (
         <div>
-            <div onClick={onClick} className={`bg-white rounded-full py-4 px-5 flex flex-row flex-nowrap items-center cursor-pointer duration-300 ${isOpen && 'shadow-primary'}`}>
+            <div onClick={onClick} className={`rounded-full py-4 px-5 flex flex-row flex-nowrap items-center cursor-pointer duration-300 ${isOpen && 'shadow-primary bg-white'}`}>
                 <div className='flex-grow-0 flex-shrink text-xl'>
                     <i>
                         <Icon />
