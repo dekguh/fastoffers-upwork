@@ -25,6 +25,7 @@ const HomePage = () => {
     return (
     <>
         <Helmet>
+            <title>FastOffers - draft full real estate offers in a minute</title>
             <script src='/chat.js' async></script>
         </Helmet>
 
