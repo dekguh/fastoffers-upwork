@@ -25,7 +25,7 @@ const ListPackage : React.FC = () => {
                         }
                     ]}
                     buttonText='SIGN UP NOW'
-                    buttonUrl='#'
+                    buttonUrl='https://forms.ltd/register'
                 />
             </div>
 

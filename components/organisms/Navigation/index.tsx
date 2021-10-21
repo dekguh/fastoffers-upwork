@@ -42,11 +42,11 @@ const Navigation : React.FC<INavigation> = ({ classes, logo }) => {
                     dataMenu={[
                         {
                             text: 'Sign Up',
-                            href: '#'
+                            href: 'https://forms.ltd/register'
                         },
                         {
                             text: 'Sign In',
-                            href: '#'
+                            href: 'https://forms.ltd/login'
                         }
                     ]}
                 />
