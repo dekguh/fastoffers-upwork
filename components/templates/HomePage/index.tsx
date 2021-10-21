@@ -25,7 +25,7 @@ const HomePage = () => {
     return (
     <>
         <Helmet>
-            <script src='/chat.js'></script>
+            <script src='/chat.js' async></script>
         </Helmet>
 
         <MouseEffect>
