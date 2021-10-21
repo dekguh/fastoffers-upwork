@@ -14,7 +14,7 @@ const BlockAccordion : React.FC<IBlockAccordion> = ({ icon : Icon, title, descri
                 </div>
 
                 <div className='flex-grow flex-shrink px-5'>
-                    <h5 className='text-lg font-semibold text-gray-700'>{title}</h5>
+                    <h5 className='text-xl font-semibold text-gray-700'>{title}</h5>
                 </div>
 
                 <div>
