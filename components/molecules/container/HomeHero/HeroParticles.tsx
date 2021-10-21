@@ -8,7 +8,7 @@ const HeroParticles = () => {
 
     return (
     <Particles
-        className='absolute top-0 left-0 right-0 bottom-0'
+        className='absolute top-0 left-0 right-0 h-full'
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
