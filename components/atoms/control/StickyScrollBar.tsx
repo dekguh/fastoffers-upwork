@@ -13,7 +13,7 @@ const StickyScrollBar : React.FC = () => {
     }, [])
 
     return (
-        <div className='fixed top-2/4 right-9 z-50 transform -translate-x-2/4'>
+        <div className='fixed top-2/4 right-9 z-50 transform -translate-x-2/4 hidden md:block'>
             <div>
                 <span className='absolute transform -rotate-90 -top-9 left-2/4 -translate-x-2/4 text-sm text-gray-800'>scroll</span>
             </div>
