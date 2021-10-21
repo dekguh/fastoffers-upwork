@@ -1,5 +1,6 @@
 export function calPercentOf(currentNum : number, totalNum : number, windowHeight : number) {
-    const cal = Math.ceil((currentNum/totalNum - currentNum) * 100)
-    console.log({ totalNum, windowHeight, cal })
+    const currentReal = currentNum === 0 ? currentNum : currentNum + windowHeight
+    const cal = Math.floor((currentNum/(totalNum - windowHeight)) * 100)
+    console.log({ currentReal, totalNum, windowHeight, cal })
     return cal
 }

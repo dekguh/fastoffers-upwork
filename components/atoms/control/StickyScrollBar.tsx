@@ -23,7 +23,7 @@ const StickyScrollBar : React.FC = () => {
                 <div
                     className='rounded-full bg-gray-800 h-2 w-2 absolute left-2/4 transform -translate-x-2/4 -translate-y-2/4'
                     style={{
-                        top: `${calPercentOf(scrollY, pageHeight, 0)}%`
+                        top: `${calPercentOf(scrollY, pageHeight, windowH)}%`
                     }}
                 >
                 </div>
