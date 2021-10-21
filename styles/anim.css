@@ -157,7 +157,7 @@
     transform: rotateX(-90deg);
   }
 
-.mouse-effect {
+.mouse-effect-carousel-arrow {
     color: #27292c;
     position: absolute;
     font-size: 21px;
@@ -167,18 +167,18 @@
     transition: left .4s, right .4s;
 }
 
-.mouse-effect.triangle-left {
+.mouse-effect-carousel-arrow.triangle-left {
     left: 30px;
 }
 
-.mouse-effect.triangle-right {
+.mouse-effect-carousel-arrow.triangle-right {
     right: 30px;
 }
 
-.is-clicked .mouse-effect.triangle-left {
+.is-clicked .mouse-effect-carousel-arrow.triangle-left {
     left: -30px;
 }
 
-.is-clicked .mouse-effect.triangle-right {
+.is-clicked .mouse-effect-carousel-arrow.triangle-right {
     right: -30px;
 }

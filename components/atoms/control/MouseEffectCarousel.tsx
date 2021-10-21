@@ -14,11 +14,11 @@ const MouseEffectCarousel : React.FC<IMouseEffectCarousel> = ({ top, left,  clas
         >
             <span className='absolute z-20 top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-white text-xs'>drag</span>
 
-            <span className='mouse-effect z-10 triangle-left'>
+            <span className='mouse-effect-carousel-arrow z-10 triangle-left'>
                 <i><GoTriangleLeft /></i>
             </span>
 
-            <span className='mouse-effect z-10 triangle-right'>
+            <span className='mouse-effect-carousel-arrow z-10 triangle-right'>
                 <i><GoTriangleRight /></i>
             </span>
         </div>
