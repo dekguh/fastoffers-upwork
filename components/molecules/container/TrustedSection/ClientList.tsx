@@ -44,6 +44,12 @@ const ClientList : React.FC<IClientList> = ({ dataLogo }) => {
           document.getElementById('mouseEffectId')?.classList.remove('hidden')
           isEnter == true && setIsEnter(false)
         }}
+        onMouseDown={() => {
+          document.getElementById('mouseEffectCarouselId')?.classList.add('is-clicked')
+        }}
+        onMouseUp={() => {
+          document.getElementById('mouseEffectCarouselId')?.classList.remove('is-clicked')
+        }}
         className='overflow-hidden'
       >
           {isEnter && <MouseEffectCarousel top={mouse.clientY} left={mouse.clientX} classes={`${isEnter && 'active'}`} />}

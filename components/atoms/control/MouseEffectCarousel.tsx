@@ -1,5 +1,6 @@
 import React from 'react'
 import { IMouseEffectCarousel } from '../../utils/types'
+import { GoTriangleLeft, GoTriangleRight } from 'react-icons/go'
 
 const MouseEffectCarousel : React.FC<IMouseEffectCarousel> = ({ top, left,  classes }) => {
     return (
@@ -9,8 +10,17 @@ const MouseEffectCarousel : React.FC<IMouseEffectCarousel> = ({ top, left,  clas
                 top: `${top}px`,
                 left: `${left}px`
             }}
+            id='mouseEffectCarouselId'
         >
-            <span className='absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-white text-xs'>drag</span>
+            <span className='absolute z-20 top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-white text-xs'>drag</span>
+
+            <span className='mouse-effect z-10 triangle-left'>
+                <i><GoTriangleLeft /></i>
+            </span>
+
+            <span className='mouse-effect z-10 triangle-right'>
+                <i><GoTriangleRight /></i>
+            </span>
         </div>
     )
 }

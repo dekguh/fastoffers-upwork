@@ -156,3 +156,29 @@
     transform-origin: center;
     transform: rotateX(-90deg);
   }
+
+.mouse-effect {
+    color: #27292c;
+    position: absolute;
+    font-size: 21px;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left .4s, right .4s;
+}
+
+.mouse-effect.triangle-left {
+    left: 30px;
+}
+
+.mouse-effect.triangle-right {
+    right: 30px;
+}
+
+.is-clicked .mouse-effect.triangle-left {
+    left: -30px;
+}
+
+.is-clicked .mouse-effect.triangle-right {
+    right: -30px;
+}
