@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="./favicon.ico" />
         <meta property="og:title" content="FastOffers - draft full real estate offers in a minute" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:url" content="https://fastoffers.ca/" />
         <meta property="og:image" content="./SocialShare.png" />
       </Head>
 
