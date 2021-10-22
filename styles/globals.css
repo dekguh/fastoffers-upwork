@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        font-family: 'Neuzeit Grotesk';
+        font-family: 'Neuzeit Grotesk', sans-serif;
     }
 
     .text-gradient-green {
