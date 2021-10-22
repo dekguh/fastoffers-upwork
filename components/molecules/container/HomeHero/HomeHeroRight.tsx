@@ -6,7 +6,7 @@ const HomeHeroRight : React.FC = () => {
             <div>
                 <img
                     className='relative z-10 max-w-full xl:max-w-3xl mx-auto w-full anim-bounce-image'
-                    src="/header-cartoon.png"
+                    src="./header-cartoon.png"
                     alt="cartoon header"
                 />
             </div>
