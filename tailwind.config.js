@@ -33,6 +33,10 @@ module.exports = {
       },
       height: {
         '500px': '500px'
+      },
+      fontSize: {
+        '110px': '110px',
+        '80px': '80px'
       }
     },
   },
