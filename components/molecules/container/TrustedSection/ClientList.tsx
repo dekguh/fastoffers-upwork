@@ -37,11 +37,11 @@ const ClientList : React.FC<IClientList> = ({ dataLogo }) => {
       <div
         ref={ref}
         onMouseEnter={() => {
-          document.getElementById('mouseEffectId')?.classList.add('hidden')
+          document.getElementById('mouseEffectId')?.classList.remove('md:block')
           isEnter == false && setIsEnter(true)
         }}
         onMouseLeave={() => {
-          document.getElementById('mouseEffectId')?.classList.remove('hidden')
+          document.getElementById('mouseEffectId')?.classList.add('md:block')
           isEnter == true && setIsEnter(false)
         }}
         onMouseDown={() => {

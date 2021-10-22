@@ -5,7 +5,7 @@ import { GoTriangleLeft, GoTriangleRight } from 'react-icons/go'
 const MouseEffectCarousel : React.FC<IMouseEffectCarousel> = ({ top, left,  classes }) => {
     return (
         <div
-            className={`mouse-effect-carousel pointer-events-none fixed rounded-full bg-optional h-12 w-12 transform -translate-x-2/4 -translate-y-2/4 z-50 ${classes}`}
+            className={`mouse-effect-carousel pointer-events-none fixed rounded-full bg-optional h-12 w-12 transform -translate-x-2/4 -translate-y-2/4 z-50 hidden md:block ${classes}`}
             style={{
                 top: `${top}px`,
                 left: `${left}px`

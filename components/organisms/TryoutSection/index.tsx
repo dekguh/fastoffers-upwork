@@ -5,10 +5,10 @@ const TryoutSection : React.FC = () => {
         <div
             className='relative bg-primary mt-10'
             onMouseEnter={() => {
-                document.getElementById('mouseEffectId')?.classList.add('hidden')
+                document.getElementById('mouseEffectId')?.classList.remove('md:block')
             }}
             onMouseLeave={() => {
-                document.getElementById('mouseEffectId')?.classList.remove('hidden')
+                document.getElementById('mouseEffectId')?.classList.add('md:block')
             }}
         >
             <div className='absolute top-0 left-0 right-0'>
@@ -19,7 +19,7 @@ const TryoutSection : React.FC = () => {
                 </svg>
             </div>
 
-            <div className='container mx-auto px-5 lg:px-10 xl:px-20 pt-64 pb-20'>
+            <div className='container mx-auto px-5 lg:px-10 xl:px-20 pt-64 pb-20 relative z-20'>
                 <div className='text-center'>
                     <h2 className='text-white text-5xl font-bold mb-5'>try out the live instant demo:</h2>
                     <p className='mb-3 text-gray-800 text-lg'>Try the demo below to see how fast and easy it is to draft full real estate agreements with FastOffers</p>

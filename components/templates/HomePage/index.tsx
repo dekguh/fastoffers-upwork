@@ -7,7 +7,6 @@ import PricingSection from '../../organisms/PricingSection'
 import StepSection from '../../organisms/StepSection'
 import TrustedSection from '../../organisms/TrustedSection'
 import TryoutSection from '../../organisms/TryoutSection'
-import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
     useEffect(() => {
@@ -24,11 +23,6 @@ const HomePage = () => {
     }, [])
     return (
     <>
-        <Helmet>
-            <title>FastOffers - draft full real estate offers in a minute</title>
-            <script src='/chat.js' async></script>
-        </Helmet>
-
         <MouseEffect>
             <div className='bg-bordered-wrap'>
                 <HomeHero />
